@@ -32,6 +32,7 @@ $consulta = "SELECT id_cliente, id_persona, nombre, apellido, dni, estado, sexo,
 		<a href="../../index.php" class="btn btn-light">Volver</a>
 	</p>
 	<br>
+	
 	<div align="center">
 		<div>
 			<?php

@@ -34,6 +34,8 @@ if (isset($_GET['id'])) {
 <head>
 	<title>Modificar Cliente</title>
 	<link rel="stylesheet" type="text/css" href="../../css/style.css">
+	<link rel="stylesheet" type="text/css" href="../../css/css_alta.css">
+
 </head>
 <body>
 	<h1>Clientes - Modificar</h1>
@@ -41,8 +43,10 @@ if (isset($_GET['id'])) {
 		<a href="nuevo.php">Nuevo</a> |
 		<a href="listado.php">Volver</a>
 	</p>
-	<div align="center">
-		<p>
+	<div align="container">
+		<div class="content">
+			<div class="cadastro">
+				<p>
 			<form action="modi_alta.php" method="post">
 				<input type="hidden" name="id_persona" value="<?php echo $id_persona ?>">
 				<input type="hidden" name="id_cliente" value="<?php echo $id_cliente ?>">
@@ -78,10 +82,14 @@ if (isset($_GET['id'])) {
 					</select>
 				</p>
 				<p>
-					<button>Guardar</button>
+					<input type="submit" value="Actualizar Informacion" name="guardar">
 				</p>
 			</form>
 		</p>
+			</div>
+			
+		</div>
+		
 	</div>
 </body>
 </html>
